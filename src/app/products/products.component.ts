@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsService } from '../products.service';
 
+// add functionality to product photo
+
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -11,9 +13,8 @@ export class ProductsComponent implements OnInit {
   constructor(private productsService: ProductsService) {}
 
   ngOnInit(): void {
-    this.productsService.getRandomProducts().subscribe(res => {
+    this.productsService.getProducts().subscribe(res => {
       this.products = res;
-      console.log(this.products);
     });
   }
 }

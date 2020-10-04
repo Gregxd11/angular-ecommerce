@@ -5,9 +5,16 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ProductsService {
+  products;
   constructor(private http: HttpClient) {}
 
-  getRandomProducts(): any {
+  getProducts(): any {
+    this.products = this.http.get('https://fakestoreapi.com/products');
     return this.http.get('https://fakestoreapi.com/products');
+  }
+
+  getProduct(id: number): any {
+    const prodId = id + 1;
+    return this.http.get(`https://fakestoreapi.com/products/${prodId}`);
   }
 }

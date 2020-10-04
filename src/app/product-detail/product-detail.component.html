@@ -1,1 +1,10 @@
-<p>product-detail works!</p>
+<h1 (click)='test()'>Product Details</h1>
+
+<div *ngIf='product' class="container">
+  <img src="{{product.image}}" alt="">
+  <div class="content">
+    <h2>{{product.title}}</h2>
+    <h3>{{product.price | currency}}</h3>
+    <p>{{product.description}}</p>
+  </div>
+</div>
