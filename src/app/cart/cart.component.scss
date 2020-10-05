@@ -1,0 +1,43 @@
+@use '../../styles.scss';
+
+h1 {
+  color: styles.$primary-color;
+  font-size: 6em;
+  text-align: center;
+  margin-top: .5em;
+  margin-bottom: 1em;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  table {
+    width: 100%;
+    text-align: center;
+    th {
+      color: styles.$primary-color;
+      font-size: 3em;
+    }
+    th,
+    td {
+      padding: 1em;
+    }
+    tr {
+      h5 {
+        font-size: 3em;
+        color: styles.$primary-color;
+        text-align: right;
+      }
+    }
+  }
+  p {
+    font-size: 2em;
+    color: white;
+  }
+  img {
+    max-width: 15vw;
+    max-height: 20vh;
+    width: auto;
+    height: auto;
+  }
+}

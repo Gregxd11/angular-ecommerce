@@ -7,7 +7,6 @@
       <h3><a [routerLink]="[productId]">{{product.title}}</a></h3>
       <p>{{product.price | currency}}</p>
     </div>
-    <button>BUY</button>
+    <button (click)='addItem(product)'>ADD TO CART</button>
   </div>
 </div>
-

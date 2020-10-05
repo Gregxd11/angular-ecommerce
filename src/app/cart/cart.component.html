@@ -1,0 +1,25 @@
+<ng-template [ngIf]='items.length' [ngIfElse]='none'>
+  <h1>CART</h1>
+  <div class="container">
+    <table>
+      <tr>
+        <th></th>
+        <th>NAME</th>
+        <th>PRICE</th>
+      </tr>
+      <tr *ngFor='let item of items'>
+        <td><img src="{{item.image}}" alt=""></td>
+        <td><p>{{item.title}}</p></td>
+        <td><p>{{item.price | currency}}</p></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><h5>TOTAL PRICE:</h5></td>
+        <td><p>{{totalPrice | currency}}</p></td>
+      </tr>
+    </table>
+  </div>
+</ng-template>
+<ng-template #none >
+  <h1>Your cart is empty!</h1>
+</ng-template>

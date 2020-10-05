@@ -29,6 +29,16 @@ nav {
       &:hover {
         background-color: darken(styles.$toolbar-color, 15%);
       }
+      #cartAmount {
+        background-color: white;
+        color: black;
+        border-radius: 50%;
+        width: 1em;
+        height: 1em;
+        text-align: center;
+        display: inline-flex;
+        flex-direction: column-reverse;
+      }
     }
   }
 }

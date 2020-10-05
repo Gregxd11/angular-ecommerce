@@ -20,8 +20,4 @@ export class ProductDetailComponent implements OnInit {
         .subscribe(res => (this.product = res));
     });
   }
-
-  test(): void {
-    console.log(this.product);
-  }
 }
