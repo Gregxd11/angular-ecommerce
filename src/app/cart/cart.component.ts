@@ -14,6 +14,9 @@ export class CartComponent implements OnInit {
   ngOnInit(): void {
     this.items = this.cart.getItems();
     this.totalPrice = this.cart.totalPrice();
-    console.log(this.totalPrice);
+  }
+
+  checkout(): void {
+    alert('You paid and checked out!');
   }
 }

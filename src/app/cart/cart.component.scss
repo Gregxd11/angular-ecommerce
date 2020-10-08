@@ -41,3 +41,29 @@ h1 {
     height: auto;
   }
 }
+
+button {
+  margin-bottom: 25px;
+  background-color: styles.$primary-color;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-left: auto;
+  width: 50%;
+  margin-top: 2.5em;
+  &:hover {
+    background-color: darken(styles.$primary-color, 15%);
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
+}

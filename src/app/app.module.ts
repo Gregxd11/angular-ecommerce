@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
-import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { CartComponent } from './cart/cart.component';
@@ -20,7 +19,6 @@ import { CartComponent } from './cart/cart.component';
       ToolbarComponent,
       ProductsComponent,
       ProductDetailComponent,
-      AboutComponent,
       ContactComponent,
       HomeComponent,
       CartComponent
