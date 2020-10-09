@@ -1,5 +1,7 @@
 @use '../../styles.scss';
-
+.main-container {
+  margin-top: 10vh;
+}
 h1 {
   color: styles.$primary-color;
   font-size: 6em;
@@ -21,6 +23,7 @@ h1 {
     th,
     td {
       padding: 1em;
+      border-bottom: lighten(styles.$primary-color, 10%) solid 2px;
     }
     tr {
       h5 {
