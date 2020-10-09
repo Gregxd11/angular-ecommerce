@@ -1,12 +1,16 @@
-<h1>Products</h1>
+<div class="container">
+  <h1>Products</h1>
 
-<div class="cards">
-  <div *ngFor='let product of products; index as productId' class="product-card" >
-    <img src="{{product.image}}">
-    <div class="card-content">
-      <h3><a [routerLink]="[productId]">{{product.title}}</a></h3>
-      <p>{{product.price | currency}}</p>
+  <div class="cards">
+    <div *ngFor='let product of products; index as productId' class="product-card" >
+      <img src="{{product.image}}">
+      <div class="card-content">
+        <h3><a [routerLink]="[productId]">{{product.title}}</a></h3>
+        <p>{{product.price | currency}}</p>
+      </div>
+      <button (click)='addItem(product)'>ADD TO CART</button>
     </div>
-    <button (click)='addItem(product)'>ADD TO CART</button>
   </div>
 </div>
+
+

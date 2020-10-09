@@ -8,6 +8,9 @@ nav {
   padding: 0 1em;
   box-shadow: darken(styles.$toolbar-color, 5%) 2px 2px 3px;
   z-index: 2;
+  width: 100%;
+  position: fixed;
+  top: 0;
   .logo {
     font-weight: bold;
     font-size: 2rem;
